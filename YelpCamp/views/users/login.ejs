@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container d-flex justify-content-center align-items-center mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 col-md-4 offset-xl-4">
+            <div class="card shadow">
+                <img src="https://media.istockphoto.com/id/1399027200/photo/rv-camping-campsites-and-roads-at-park.jpg?s=612x612&w=0&k=20&c=BbWGrBmHr6f6zw1tEmh95eEV2BtKemWpYK_oJ65CBow="
+                    alt="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Login</h5>
+                    <form action="/login" method="POST" class="validated-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username" required>
+                            <div class="valid-feedback">
+                                looks good!
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                looks good!
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-success">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
